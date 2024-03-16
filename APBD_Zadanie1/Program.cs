@@ -10,7 +10,11 @@ var university = Console.ReadLine();
 Console.WriteLine(name + " has " + age + " years and studies at " + university + " university.");
 
 static double findAverage(int[] ints) {
-    return Queryable.Average(ints.AsQueryable());
+    int sum = 0;
+    for (int j = 0; j < ints.Length; j++) {
+        sum += ints[j];
+    }
+    return (double) sum/ints.Length;
 }
 int[] ints = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 var avg = findAverage(ints);
