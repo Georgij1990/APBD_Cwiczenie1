@@ -15,3 +15,8 @@ static double findAverage(int[] ints) {
 int[] ints = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 var avg = findAverage(ints);
 Console.WriteLine(avg);
+
+static int findMax(int[] ints) {
+    return ints.Max();
+}
+Console.WriteLine(findMax(ints));
