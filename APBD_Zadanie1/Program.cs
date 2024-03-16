@@ -11,8 +11,8 @@ Console.WriteLine(name + " has " + age + " years and studies at " + university +
 
 static double findAverage(int[] ints) {
     int sum = 0;
-    for (int j = 0; j < ints.Length; j++) {
-        sum += ints[j];
+    for (int i = 0; i < ints.Length; i++) {
+        sum += ints[i];
     }
     return (double) sum/ints.Length;
 }
